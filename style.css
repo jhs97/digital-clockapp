@@ -1,0 +1,74 @@
+/*  디지털 시계 과제 css  */
+@font-face {
+    font-family: 'DS-Digi';
+    src: url(ds-font/DS-DIGIB.TTF);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+#clock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+    height: 350px;
+    /* background: #ffc5b3; */
+    background-image: url(./totorobg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 5px solid #000000;
+    border-radius: 25px;
+    box-shadow: 0 0 150px rgba(0, 0, 0, 0.5) inset;
+    position: relative;
+}
+#clock > .container {
+    width: 450px;
+    height: 250px;
+    font-size: 130px;
+    /* background: #888; */
+    font-family: 'DS-Digi', sans-serif;
+    color: rgb(165, 184, 206);
+    position: absolute;
+}
+.container > .m-d {
+    position: absolute;
+    font-size: 60px;
+    letter-spacing: 3px;
+    top: 30px;
+    left: 90px;
+}
+.m-d > .day {
+   margin-left: 53px;
+}
+
+#clock > .container > .ampm {
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    font-size: 70px;
+}
+
+#clock > .container > .time {
+    display: flex;
+    position: absolute;
+    bottom: -20px;
+    left: 80px;
+}
+#clock > .container > .time > .sec {
+    position: absolute;
+    top: 42px;
+    right: -80px;
+    font-size: 80px;
+}
+
+
+
+
