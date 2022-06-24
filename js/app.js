@@ -32,7 +32,7 @@ $(function(){
         $('.month').html(Month+1);
         $('.date').html(date);
         $('.day').html(Day);
-        $('.amPm').html(amPm);
+        $('.ampm').html(amPm);
         $('.hour').html(h);
         $('.min').html(m);
         $('.sec').html(s);
